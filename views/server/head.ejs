@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Newsfeed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+    <meta content="Coderthemes" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- App favicon -->
+    <!-- App css -->
+    <link href="../../public/asset_ad/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../public/asset_ad/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../public/asset_ad/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../../public/asset_ad/css/app.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown"
+                        href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <span class="pro-user-name ml-1">
+                           <%=sess_user['un']%><i class="mdi mdi-chevron-down"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0 text-white">
+                                Xin chào!
+                            </h5>
+                        </div>
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="fe-user"></i>
+                            <span>Tài khoản</span>
+                        </a>
+                        <a href="logout" class="dropdown-item notify-item">
+                            <i class="fe-log-out"></i>
+                            <span>Đăng xuất</span>  
+                        </a>
+
+                    </div>
+                </li>
+            </ul>
+
+            <!-- LOGO -->
+            <div class="logo-box">
+                <a href="account" class="logo text-center">
+                    <span class="logo-lg">
+                        <img src="../../public/images/logo.jpg" alt="" height="24">
+                    </span>
+
+                </a>
+            </div>
+
+            <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                <li>
+                    <button class="button-menu-mobile waves-effect waves-light">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- end Topbar -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left-side-menu">
+
+            <div class="slimscroll-menu">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+
+                    <ul class="metismenu" id="side-menu">
+
+                        <li class="menu-title">ADMIN</li>
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="la la-file-text-o"></i>
+                                <span> Quản lý </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+
+
+                                <li>
+                                    <a href="account">Người dùng</a>
+                                </li>
+                                <li>
+                                    <a href="category">Danh mục</a>
+                                </li>
+                                <li>
+                                    <a href="post">Bài viết</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- End Sidebar -->
+
+              
+
+            </div>
+            <!-- Sidebar -left -->
+
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <!-- <li class="breadcrumb-item"><a href="javascript: void(0);">Upvex</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
+                                            <li class="breadcrumb-item active">Basic Tables</li> -->
+                                    </ol>
+                                </div>
+                                <!-- <h4 class="page-title">Basic Tables</h4> -->
+                            </div>
+                        </div>
+                    </div>

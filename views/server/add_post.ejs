@@ -1,0 +1,12 @@
+<p><a href="post"><button type="button" class="btn btn-success" >Admin page</button></a></p>
+<form action="" method="post">
+        <p>Tiêu đề<input type="text" name="tieude"></p>
+        <p>Ảnh<input type="file" name="anh" onchange="readUrl(this)" accept="Image/*"></p>
+        <p>Ngày đăng<input type="date" min="0" max="1" name="ngaydang"></p>
+        <p>Tác giả<input type="text" name="tacgia"></p>
+        <p>ID danh mục<input type="number" min="1" name="idDanhMuc"></p>
+        <p>Trạng thái<input type="number"  min="0" max="1" name="trangthai"></p>
+        <p>Nội dung <textarea id="editor1" name="noidung" cols="50" rows="10"></textarea></p>
+        <p><button type="submit" class="btn btn-success" >Add</button></p> 
+</form>
+

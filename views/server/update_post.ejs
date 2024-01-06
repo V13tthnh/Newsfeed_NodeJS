@@ -1,0 +1,11 @@
+<p><a href="post"><button type="button" class="btn btn-success" >Admin page</button></a></p>
+<form action="" method="post" id="form_account">
+        <p>Tiêu đề<input type="text" name="tieude" value="<%=data.post[0]['TieuDe']%>" required></p>
+        <p>Ảnh<input type="file" name="anh" onchange="readUrl(this)" accept="Image/*" value="<%=data.post[0]['TieuDe']%>"></p>
+        <p>Ngày đăng<input type="date" min="0" max="1" name="ngaydang" value="<%=data.post[0]['NgayDang']%>"></p>
+        <p>Tác giả<input type="text" name="tacgia" value="<%=data.post[0]['TacGia']%>"></p>
+        <p>ID danh mục<input type="number" min="1" name="idDanhMuc" value="<%=data.post[0]['IDDanhMuc']%>"></p>
+        <p>Trạng thái<input type="number"  min="0" max="1" name="trangthai" value="<%=data.post[0]['TrangThai']%>"></p>
+        <p>Nội dung <textarea id="editor1" name="noidung" cols="150" rows="60"><%=data.post[0]['NoiDung']%></textarea></p>
+        <p><button type="submit" class="btn btn-success" >Update</button></p> 
+</form>

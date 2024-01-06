@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col">
+        <a href="add_post"><button type="button" class="btn btn-success" >Thêm</button></a>
+        <div class="card-box">
+            <h4 class="header-title">Bài viết</h4>
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th>ID Bài Viết</th>
+                            <th>Tiêu đề</th>
+                            <th>Ảnh</th>
+                            <th>Nội dung</th>
+                            <th>Ngày đăng</th>
+                            <th>Tác giả</th>
+                            <th>ID danh mục</th>
+                            <th>Trạng thái</th>
+                            <th>Sửa</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%data.lst_post.forEach((item)=>{%>
+                            <tr>
+                                <td>
+                                    <%=item['IDBaiViet']%>
+                                </td>
+                                <td>
+                                    <%=item['TieuDe']%>
+                                </td>
+                                <td>
+                                    <%=item['Anh']%>
+                                </td>
+                                <td>
+                                    <%=item['NoiDung']%>
+                                </td>
+                                <td>
+                                    <%=item['NgayDang']%>
+                                </td>
+                                <td>
+                                    <%=item['TacGia']%>
+                                </td>
+                                <td>
+                                    <%=item['IDDanhMuc']%>
+                                </td>
+                                <td>
+                                    <%=item['TrangThai']%>
+                                </td>
+                                <td>
+                                    <a href="update_post?id=<%=item['IDBaiViet']%>"><button type="button" class="btn btn-success">Sửa</button></a>
+                                </td>
+                                <td>
+                                    <a href="delete_post?id=<%=item['IDBaiViet']%>"><button type="button" class="btn btn-success">Xóa</button></a>
+                                </td>
+                            </tr>
+                            <%});%>
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- end card-box -->
+    </div> <!-- end col -->
+</div>
