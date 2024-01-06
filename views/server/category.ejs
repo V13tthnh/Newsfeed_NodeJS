@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col">
+        <a href="add_category"><button type="button" class="btn btn-success" >Thêm</button></a>
+        <div class="card-box">
+            <h4 class="header-title">Danh mục</h4>
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th>ID Danh Mục</th>
+                            <th>Tên Danh Mục</th>
+                            <th>Cập nhật</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%data.lst_category.forEach((item)=>{%>
+                            <tr>   
+                                <td>
+                                    <%=item['IDDanhMuc']%>
+                                </td>
+                                <td>
+                                    <%=item['TenDanhMuc']%>
+                                </td>
+                                <td>
+                                    <a href="update_category?id=<%=item['IDDanhMuc']%>"><button type="button" class="btn btn-success">Sửa</button></a>
+                                </td>
+                                <td>
+                                    <a href="delete_category?id=<%=item['IDDanhMuc']%>"><button type="button" class="btn btn-success">Xóa</button></a>
+                                </td>
+                            </tr>
+                            <%});%>
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- end card-box -->
+    </div> <!-- end col -->
+</div>

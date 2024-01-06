@@ -1,0 +1,11 @@
+<p><a href="account"><button type="button" class="btn btn-success" >Admin page</button></a></p>
+<form action="" method="post">
+        <p>Họ tên<input type="text" name="hoten" value="<%=data.user[0]['TenNguoiDung']%>"></p>
+        <p>Email<input type="email" name="email" value="<%=data.user[0]['Email']%>"></p>
+        <p>Mật khẩu<input type="text" name="matkhau" value="<%=data.user[0]['MatKhau']%>"></p>
+        <p>Quyền<input type="number" min="0" max="1" name="quyen" value="<%=data.user[0]['Quyen']%>"></p>
+        <p>Trạng thái<input type="number"  min="0" max="1" name="trangthai" value="<%=data.user[0]['TrangThai']%>"></p>
+        <p><button type="submit" class="btn btn-success" >Update</button></p> 
+</form>
+
+

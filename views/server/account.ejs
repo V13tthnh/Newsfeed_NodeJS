@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col">
+        <a href="add_account"><button type="button" class="btn btn-success" >Thêm</button></a>
+        <div class="card-box">
+            <h4 class="header-title">Người dùng</h4>
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th>ID Người dùng</th>
+                            <th>Họ tên</th>
+                            <th>Email</th>
+                            <th>Mậu khẩu</th>
+                            <th>Quyền</th>
+                            <th>Trạng thái</th>
+                            <th>Sửa</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%data.lst_user.forEach((item)=>{%>
+                            <tr>
+                                <td>
+                                    <%=item['IDNguoiDung']%>
+                                </td>
+                                <td>
+                                    <%=item['TenNguoiDung']%>
+                                </td>
+                                <td>
+                                    <%=item['Email']%>
+                                </td>
+                                <td>
+                                    <%=item['MatKhau']%>
+                                </td>
+                                <td>
+                                    <%=item['Quyen']%>
+                                </td>
+                                <td>
+                                    <%=item['TrangThai']%>
+                                </td>
+                                <td>
+                                    <a href="update_account?id=<%=item['IDNguoiDung']%>"><button type="button" class="btn btn-success">Sửa</button></a>
+                                </td>
+                    
+                                <td>
+                                    <a href="delete_account?id=<%=item['IDNguoiDung']%>"><button type="button" class="btn btn-success">Xóa</button></a>
+                                </td>
+                            </tr>
+                            <%});%>
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- end card-box -->
+    </div> <!-- end col -->
+</div>
